@@ -1,0 +1,33 @@
+{
+  "name": "fullstack-airbnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "server": "node /bin/www",
+    "client": "node start-client.js", 
+    "precommit": "node_modules/eslint/bin/eslint.js src --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "prettier": "^1.7.4",
+    "prettier-eslint": "^8.2.1"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "helmet": "^3.9.0",
+    "redux-thunk": "^2.2.0"
+  }
+}

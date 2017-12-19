@@ -1,0 +1,51 @@
+{
+  "extends": [
+    "prettier"
+    // "./node_modules/eslint-config-react-app/index.js",
+   
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "jsx-a11y/href-no-hash": "off",
+    "react/jsx-closing-bracket-location":"off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "comma-dangle": ["error", "never"],
+    "object-curly-newline":"off",
+    "arrow-parens": [
+      "off"
+    ],
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true
+      }
+    ]
+  },
+  "plugins": [
+    "prettier",
+    "jest"
+  ], 
+  "env": {
+    "browser": true
+  }
+}
